@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Landing Page Fake Door</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 40px; background: #f5f5f5; text-align: center; }
+  .container { max-width: 600px; margin: auto; background: white; padding: 40px;
+    border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+  .fake-door-btn {
+    display: inline-block; padding: 14px 28px; background-color: #4F46E5; color: white;
+    text-decoration: none; font-weight: 600; border-radius: 10px;
+    transition: background 0.2s, transform 0.2s; margin-top: 20px;
+  }
+  .fake-door-btn:hover { background-color: #4338CA; transform: translateY(-2px); }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>O teu título aqui</h1>
+    <p>Escreve aqui o teu texto da landing page.</p>
+
+    <a href="#" id="fakeDoorBtn" class="fake-door-btn">Quero Aceder</a>
+  </div>
+
+<script>
+// Namespace privado
+const namespace = "fake_door_private_1";
+const key = "cta_clicks";
+
+document.getElementById("fakeDoorBtn").addEventListener("click", () => {
+  fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`);
+  window.location.href = "thanks.html";
+});
+</script>
+
+</body>
+</html>
