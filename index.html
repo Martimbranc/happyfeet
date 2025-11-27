@@ -35,7 +35,7 @@
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(79, 70, 229, 1); /* Overlay escuro para texto legível */
+    background: rgba(79, 70, 229); /* Overlay escuro para texto legível */
   }
   .hero-content {
     position: relative;
@@ -62,10 +62,10 @@
     padding: 60px 20px;
     background: white; 
     border-radius: 35px; 
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);  /* Sobreposição leve com hero */
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1); 
+    margin-top: -40px; /* Sobreposição leve com hero */
     position: relative;
     z-index: 1;
-    margin-top:-35px;
   }
   .container h2 {
     font-family: 'Playfair Display', serif;
@@ -133,24 +133,26 @@
 </head>
 <body>
   <section class="hero">
-  <div class="hero-content">
-    <h1>HappyFeet</h1>
-    <p>Conforto e elegância para o teu percurso académico!</p>
-    <!-- Imagem do GitHub aqui -->
-  </div>
-</section>
+    <div class="hero-content">
+      <h1>HappyFeet</h1>
+      <p>Conforto e elegância para o teu percurso académico!</p>
+    </div>
+  </section>
 
   <div class="container">
-    <img src="https://raw.githubusercontent.com/Martimbranc/happyfeet/main/happyfeet.jpg" alt="Sapatos HappyFeet em uso" style="max-width: 300px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: block; margin: 20px auto;">
+    <img src="imagens/happyfeet.jpg" alt="Sapatos HappyFeet em uso" style="max-width: 300px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
     <h2>Porquê Escolher os Nossos Sapatos?</h2>
     <p>Desenhámos os sapatos perfeitos para o teu traje académico feminino: elegantes, duradouros e tão confortáveis que te vão acompanhar com leveza em cada passo. Prepara-te — podem muito bem ser os sapatos mais confortáveis que já usaste!</p>
+
     <ul class="benefits">
       <li><strong>Conforto em Primeiro Lugar:</strong> Estes sapatos foram especialmente concebidos para oferecer o máximo de conforto, permitindo que a utilizadora passe horas em pé sem sentir dores.</li>
       <li><strong>Estilo Tradicional:</strong> O conforto não precisa de quebrar a tradição. Estes sapatos preservam a verdadeira essência do traje académico, mantendo o visual clássico que tanto o caracteriza.</li>
       <li><strong>Feito a Pensar em Si:</strong> Com materiais inovadores, como a cortiça, a HappyFeet foi criada para resolver os aspetos que tornam os sapatos desconfortáveis.</li>
     </ul>
 
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIc8rnuD6JFmIyzoDfI1aK5uNFtPcYXKnvVxbp52nynDIfpA/viewform?usp=dialog" target="_blank" class="cta-btn">Quero Reservar o Meu Par Agora</a></li>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIc8rnuD6JFmIyzoDfI1aK5uNFtPcYXKnvVxbp52nynDIfpA/viewform?usp=dialog" target="_blank" class="cta-btn share-btn">Quero Reservar o Meu Par Agora</a></li>
   </div>
+
+
 </body>
 </html>
