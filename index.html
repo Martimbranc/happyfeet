@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -135,12 +133,13 @@
 </head>
 <body>
   <section class="hero">
-    <div class="hero-content">
-      <img src="https://raw.githubusercontent.com/Martimbranc/happyfeet/main/happyfeet.jpg" alt="Sapatos HappyFeet em uso" style="max-width: 300px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-      <h1>HappyFeet</h1>
-      <p>Conforto e elegância para o teu percurso académico!</p>
-    </div>
-  </section>
+  <div class="hero-content">
+    <h1>HappyFeet</h1>
+    <p>Conforto e elegância para o teu percurso académico!</p>
+    <!-- Imagem do GitHub aqui -->
+    <img src="https://raw.githubusercontent.com/Martimbranc/happyfeet/main/happyfeet.jpg" alt="Sapatos HappyFeet em uso" style="max-width: 300px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: block; margin: 20px auto;">
+  </div>
+</section>
 
   <div class="container">
     <h2>Porquê Escolher os Nossos Sapatos?</h2>
@@ -154,17 +153,5 @@
 
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIc8rnuD6JFmIyzoDfI1aK5uNFtPcYXKnvVxbp52nynDIfpA/viewform?usp=dialog" target="_blank" class="cta-btn share-btn">Quero Reservar o Meu Par Agora</a></li>
   </div>
-
-<script>
-// Namespace privado (mantém o contador – atualiza a API depois!)
-const namespace = "fake_door_private_1";
-const key = "cta_clicks";
-
-document.getElementById("fakeDoorBtn").addEventListener("click", () => {
-  fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`);
-  window.location.href = "thanks.html";
-});
-</script>
-
 </body>
 </html>
